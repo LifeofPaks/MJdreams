@@ -1,40 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
-@import './styles/Responsive.scss';
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
+@import "./styles/Responsive.scss";
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-button, input, textarea{
+button,
+input,
+textarea {
   background: transparent;
   border: none;
   outline: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-body{
+body {
   font-family: "Alexandria", sans-serif;
   overflow-x: hidden;
-  
+
   // &::-webkit-scrollbar{
   //   display: none;
   // }
 }
 
-section{
+section {
   padding-inline: 10%;
+}
+
+.primary-btn {
+  background: #ebeb6c;
+  padding: 0.7rem 1rem ;
+  border-radius: 30px;
 }
