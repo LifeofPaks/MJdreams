@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Services"
 
 const Services = () => {
   return (

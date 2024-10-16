@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import './styles/Responsive.scss';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+button, input, textarea{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: "Alexandria", sans-serif;
+  overflow-x: hidden;
+  
+  // &::-webkit-scrollbar{
+  //   display: none;
+  // }
+}
+
+section{
+  padding-inline: 10%;
+}
