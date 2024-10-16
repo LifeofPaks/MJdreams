@@ -49,9 +49,16 @@ section {
 
 .text{
   color: #757575;
+  font-weight: 400;
 }
 
 .imp-btn{
-  padding-inline: 1.5rem;
+  padding-inline: 1.8rem;
   font-weight: 600;
+}
+
+.top-btns{
+  padding: 1rem;
+  border-radius: 16px;
+  background: #F6F6F6;
 }

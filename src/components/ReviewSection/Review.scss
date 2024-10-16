@@ -1,0 +1,98 @@
+.review {
+  padding-block: 2rem;
+
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    .top-review {
+      display: flex;
+      align-items: center;
+
+      .review-text {
+        font-weight: 600;
+      }
+    }
+
+    .review-info {
+      display: flex;
+      gap: 5px;
+      padding-left: 1rem;
+      border-left: 2px solid rgb(217, 216, 216);
+    }
+  }
+
+  .review-text {
+    font-weight: 600;
+  }
+
+  .review-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 1rem;
+
+    .review-balls-cont {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      .review-ball {
+        background: #00e19f;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+
+        &.gray {
+          background: #dfdfdf;
+        }
+      }
+    }
+  }
+
+  .review-cards {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .card {
+      background: #f6f6f6;
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 376px;
+      height: 288px;
+
+      .t1 {
+        margin-top: 1.5rem;
+      }
+
+      .profile {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .office{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .see-more{
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    width: 100%;
+    display: grid;
+    place-content: center;
+  }
+}
