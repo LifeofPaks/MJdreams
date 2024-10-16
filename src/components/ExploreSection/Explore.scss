@@ -1,0 +1,72 @@
+.explore {
+  min-height: 100vh;
+  background: #ebeb6c;
+  position: relative;
+  padding-block: 6%;
+
+  .explore-title {
+    font-size: 48px;
+    width: 500px;
+    margin-bottom: 1.5rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .explore-text {
+    width: 470px;
+    line-height: 24px;
+  }
+
+  .big-text {
+    position: absolute;
+    font-size: 150px;
+    color: #ffffff;
+    right: -2rem;
+    top: -3.7rem;
+  }
+
+  .explore-cards-container {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+
+    .explore-cards{
+        img {
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &.explore-cards:hover{
+
+            img{
+
+                transform: scale(1.03);
+            }
+          }
+    }
+
+   
+
+    .explore-text {
+      width: 300px;
+    }
+
+    .arrow {
+      display: grid;
+      place-content: center;
+      height: 47px;
+      width: 47px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      color: #ffffff;
+      right: -6.5rem;
+      top: 35%;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Services from '../ServicesSection/Services'
 import Review from '../ReviewSection/Review'
 import Explore from '../ExploreSection/Explore'
 import Footer from '../FooterSection/Footer'
+import Video from '../Video/Video'
 
 const Layout = () => {
   return (
@@ -14,6 +15,7 @@ const Layout = () => {
     <Services/>
     <Review/>
     <Explore/>
+    <Video/>
     <Footer/>
     </>
   )

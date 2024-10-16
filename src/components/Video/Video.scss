@@ -1,0 +1,28 @@
+.video{
+    min-height: 80vh;
+    background-image: url("../../assets/video-image.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+
+    .play{
+        display: grid;
+        place-content: center;
+        height: 69px;
+        width: 69px;
+        background: #EBEB6C;
+        border-radius: 50%;
+        cursor: pointer;
+
+        .play-icon{
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        &.play:hover{
+            .play-icon{
+                transform: scale(1.3);
+            }
+        }
+    }
+}
