@@ -25,7 +25,7 @@ const Hero = () => {
           <h5 class="hero-small-title">Creating unforgettable experience</h5>
           <h2 class="hero-big-title">Turn Aspirations to Reality</h2>
 
-          <button class="primary-btn about-btn">
+          <button class="primary-btn imp-btn">
             <a href="/about">About us</a>
           </button>
         </div>
