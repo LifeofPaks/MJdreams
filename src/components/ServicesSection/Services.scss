@@ -17,9 +17,11 @@
     @include Tablet {
       width: 100%;
       text-align: center;
+      padding-inline: 4rem;
     }
     
     @include Mobile {
+        padding-inline: 1rem;
         font-size: 32px;
       }
 
@@ -35,7 +37,13 @@
     @include Tablet {
       width: 100%;
       text-align: center;
+      padding-inline: 6rem;
     }
+
+    @include Mobile {
+        padding-inline: 2rem;
+      }
+
   }
 
   .big-text {
@@ -94,12 +102,15 @@
 
     @include Tablet {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       gap: 1rem;
-
-      img {
-        width: 100%;
-      }
     }
+
+    @include Mobile {
+    
+        img {
+          width: 100%;
+        }
+      }
   }
 }
