@@ -1,0 +1,65 @@
+.about {
+  padding-block: 3rem;
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 224, 20, 0.5) -40.24%,
+      rgba(55, 13, 99, 0.5) 100%
+    ),
+    url("../../assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .about-container {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+
+    .about-image {
+      background-image: linear-gradient(
+          180deg,
+          rgba(255, 224, 20, 0.5) -40.24%,
+          rgba(55, 13, 99, 0.5) 100%
+        ),
+        url("../../assets/aboutImage.png");
+      background-repeat: no-repeat;
+      height: 567px;
+      width: 521px;
+        border-radius: 2rem;
+    }
+
+    .about-us{
+        width: 417px;
+        color: #2C2C2C;
+        font-size: 14px;
+
+        .about-text{
+            margin-bottom: 1rem;
+        }
+    }
+
+    .close{
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover{
+        .close{
+            opacity: 1;
+        }
+    }
+  }
+}
