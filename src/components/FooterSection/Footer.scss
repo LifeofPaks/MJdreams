@@ -1,10 +1,12 @@
+@import "../../styles/Responsive.scss";
+
 .footer {
   padding-top: 6%;
   padding-bottom: 2rem;
   border-bottom: 8px solid #ebeb6c;
 
   .footer-logo {
-    margin-bottom: 1rem;
+    
   }
 
   .footer-info {
@@ -12,12 +14,19 @@
     justify-content: space-between;
     color: #2c2c2c;
     margin-bottom: 5rem;
+    margin-top: 1rem;
+
+    @include Mobile{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
 
     .left {
       .address {
         width: 350px;
         font-weight: 600;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
 
         span {
           font-weight: normal;
@@ -28,6 +37,11 @@
         display: flex;
         gap: 2rem;
         font-size: 14px;
+
+        @include Mobile{
+            flex-direction: column;
+            gap: 10px;
+        }
 
         .email-address {
           font-weight: 600;
@@ -63,6 +77,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include Mobile{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
 
     .left {
       color: #767676;

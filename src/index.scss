@@ -41,6 +41,10 @@ body {
 
 section {
   padding-inline: 10%;
+
+  @include Tablet {
+    padding-inline: 5%;
+  }
 }
 
 .primary-btn {
