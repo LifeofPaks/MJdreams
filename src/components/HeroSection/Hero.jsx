@@ -14,9 +14,12 @@ const Hero = () => {
         </div>
         <div class="contact">
           <button class="primary-btn contact-button">
-          <FontAwesomeIcon icon={faWhatsapp} style={{ width: '20px', height: '20px' }} />
-
-            +971524478011</button>
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              style={{ width: "20px", height: "20px" }}
+            />
+            +971524478011
+          </button>
         </div>
       </nav>
 
@@ -25,7 +28,7 @@ const Hero = () => {
           <h5 class="hero-small-title">Creating unforgettable experience</h5>
           <h2 class="hero-big-title">Turn Aspirations to Reality</h2>
 
-          <button class="primary-btn imp-btn">
+          <button class="about-link">
             <a href="/about">About us</a>
           </button>
         </div>
@@ -39,8 +42,12 @@ const Hero = () => {
           </div>
 
           <div class="navigate">
-            <div class="arrow left"><FontAwesomeIcon icon={faArrowLeft} /></div>
-            <div class="arrow right"><FontAwesomeIcon icon={faArrowRight} /></div>
+            <div class="arrow left">
+              <FontAwesomeIcon icon={faArrowLeft} />
+            </div>
+            <div class="arrow right">
+              <FontAwesomeIcon icon={faArrowRight} />
+            </div>
           </div>
         </div>
       </div>
