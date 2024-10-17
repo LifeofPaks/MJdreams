@@ -14,7 +14,7 @@ const Explore = () => {
       <p class="explore-title">
         <span>Explore</span> the wonders of <span>UAE</span>
       </p>
-      <p class="text explore-text">
+      <p class="text explore-text sub-title">
         With our curated inbound and outbound tours, featuring iconic
         attractions
       </p>

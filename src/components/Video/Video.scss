@@ -1,3 +1,5 @@
+@import "../../styles/Responsive.scss";
+
 .video{
     min-height: 80vh;
     background-image: url("../../assets/video-image.png");
@@ -5,6 +7,11 @@
     background-position: center;
     display: grid;
     place-content: center;
+
+    @include Tablet {
+        min-height: 30vh;
+      }
+
 
     .play{
         display: grid;

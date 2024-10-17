@@ -1,64 +1,105 @@
+@import "../../styles/Responsive.scss";
 
-.services{
-    padding-block: 10%;
-    position: relative;
-    min-height: 155vh;
+.services {
+  padding-block: 10%;
+  position: relative;
+  min-height: 155vh;
 
-    .service-title{
-        font-size: 48px;
-        width: 600px;
-        margin-bottom: 1.5rem;
+  @include Tablet {
+    overflow-x: hidden;
+  }
 
-        span{
-            font-weight: 700;
-        }
+  .service-title {
+    font-size: 48px;
+    width: 600px;
+    margin-bottom: 1.5rem;
+
+    @include Tablet {
+      width: 100%;
+      text-align: center;
+    }
+    
+    @include Mobile {
+        font-size: 32px;
+      }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .services-text {
+    width: 470px;
+    line-height: 24px;
+
+    @include Tablet {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .big-text {
+    position: absolute;
+    font-size: 150px;
+    color: #ebeb6c;
+    right: -1rem;
+
+    @include Tablet {
+      position: unset;
     }
 
-    .services-text{
-        width: 470px;
-        line-height: 24px;
+    @include Mobile {
+      font-size: 96px;
+    }
+  }
+
+  .image-gallery {
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    left: 0;
+    top: 30.5rem;
+
+    @include Tablet {
+      display: none;
     }
 
-    .big-text{
-        position: absolute;
-        font-size: 150px;
-        color: #EBEB6C;
-        right: -1rem;
+    .g1 {
+      .m1 {
+        margin-bottom: 1rem;
+      }
     }
 
-    .image-gallery{
-        display: flex;
-        position: absolute;
-        gap: 1rem;
-        left: 0;
-        top: 30.5rem;
-
-        .g1{
-
-            .m1{
-                margin-bottom: 1rem;
-            }
-        }
-
-        .g2-1{
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .g2-1-1{
-
-            .m4{
-                margin-bottom: 1rem;
-            }
-        }
-
-        .g3{
-            .m7{
-                margin-bottom: 1rem;
-            }
-        }
+    .g2-1 {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
     }
 
-  
+    .g2-1-1 {
+      .m4 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .g3 {
+      .m7 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .image-gallery-small {
+    display: none;
+
+    @include Tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

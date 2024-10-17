@@ -23,7 +23,7 @@ const Services = () => {
 
       <h1 class="big-text yellow">SERVICES</h1>
 
-      <div class="image-gallery">
+      <div class="image-gallery ">
         <div class="g1">
           <img className="m1" src={g1} alt="services-img" />
           <img className="m2" src={g2} alt="services-img" />
@@ -44,6 +44,13 @@ const Services = () => {
           <img className="m7" src={g7} alt="services-img" />
           <img className="m8" src={g8} alt="services-img" />
         </div>
+      </div>
+      <div className="image-gallery-small">
+        <img className="m1" src={g1} alt="services-img" />
+        <img className="m2" src={g2} alt="services-img" />
+        <img className="m3" src={g3} alt="services-img" />
+        <img className="m4" src={g4} alt="services-img" />
+        <img className="m5" src={g5} alt="services-img" />
       </div>
     </section>
   );

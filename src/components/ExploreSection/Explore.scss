@@ -1,3 +1,4 @@
+@import "../../styles/Responsive.scss";
 .explore {
   min-height: 100vh;
   background: #ebeb6c;
@@ -5,10 +6,24 @@
   padding-block: 6%;
   overflow-x: hidden;
 
+  @include Mobile {
+    min-height: 85vh;
+  }
+
   .explore-title {
     font-size: 48px;
     width: 500px;
     margin-bottom: 1.5rem;
+
+    @include Tablet {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include Mobile {
+      font-size: 32px;
+      padding-inline: 2rem;
+    }
 
     span {
       font-weight: 700;
@@ -18,7 +33,14 @@
   .explore-text {
     width: 470px;
     line-height: 24px;
+
+    @include Tablet {
+      width: 100%;
+      text-align: center;
+    }
   }
+
+
 
   .big-text {
     position: absolute;
@@ -26,6 +48,14 @@
     color: #ffffff;
     right: -2rem;
     top: -3.7rem;
+
+    @include Tablet {
+      position: unset;
+    }
+
+    @include Mobile {
+      font-size: 96px;
+    }
   }
 
   .explore-cards-container {
@@ -35,26 +65,44 @@
     gap: 1rem;
     position: relative;
 
-    .explore-cards{
-        img {
-            margin-bottom: 1rem;
-            transition: transform 0.3s ease-in-out;
-          }
-
-          &.explore-cards:hover{
-
-            img{
-
-                transform: scale(1.03);
-            }
-          }
+    @include Tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
 
-   
+    .explore-cards {
+      img {
+        margin-bottom: 1rem;
+        transition: transform 0.3s ease-in-out;
+
+        @include Tablet {
+          width: 300px;
+        }
+      }
+
+      &.explore-cards:hover {
+        img {
+          transform: scale(1.03);
+        }
+      }
+
+      .explore-text{
+          @include Tablet {
+            text-align: left;
+          }
+      }
+    }
+
+    .last-card {
+      @include Tablet {
+        display: none;
+      }
+    }
 
     .explore-text {
       width: 300px;
     }
+
 
     .arrow {
       display: grid;

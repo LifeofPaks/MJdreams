@@ -1,6 +1,6 @@
 import React from "react";
 import "../HeroSection/Hero.scss";
-import { Logo1 } from "../SVGs/svgs";
+import { Logo1, LogoSmall } from "../SVGs/svgs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -12,13 +12,17 @@ const Hero = () => {
         <div class="logo">
           <Logo1 />
         </div>
+        <div className="small-logo">
+          <LogoSmall />
+        </div>
         <div class="contact">
           <button class="primary-btn contact-button">
             <FontAwesomeIcon
               icon={faWhatsapp}
               style={{ width: "20px", height: "20px" }}
             />
-            +971524478011
+            <p className="chat">Chat</p>
+            <p className="phone"> +971524478011</p>
           </button>
         </div>
       </nav>
