@@ -11,7 +11,7 @@ const About = () => {
       <section className="about">
         <a href="/" className="back-button">
         <FontAwesomeIcon icon={faLeftLong} className="back-icon"/>
-        GO BACK
+        <p className="back-text">GO BACK</p>
         </a>
         <div className="about-container">
           <div className="about-image"></div>
