@@ -2,11 +2,17 @@ import React from "react";
 import "./About.scss";
 import Footer from "../../components/FooterSection/Footer";
 import close from "../../assets/close.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
     <div>
       <section className="about">
+        <a href="/" className="back-button">
+        <FontAwesomeIcon icon={faLeftLong} className="back-icon"/>
+        GO BACK
+        </a>
         <div className="about-container">
           <div className="about-image"></div>
           <div className="about-us">
