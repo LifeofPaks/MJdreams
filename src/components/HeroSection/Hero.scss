@@ -93,6 +93,18 @@
         width: 450px;
         margin-bottom: 2rem;
 
+        @include Large {
+          font-size: 70px;
+          width: 700px;
+          font-weight: 800;
+        }
+
+        @include Desktop {
+          font-size: 48px;
+          font-weight: 600;
+          width: 450px;
+        }
+
         @include Mobile {
           font-size: 40px;
           padding-inline: 2rem;
