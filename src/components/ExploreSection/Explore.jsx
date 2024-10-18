@@ -10,6 +10,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Explore = () => {
   return (
     <section class="explore">
+      <div className="set-width">
+
+    
       <h1 class="big-text yellow">EXPLORE</h1>
       <p class="explore-title">
         <span>Explore</span> the wonders of <span>UAE</span>
@@ -55,6 +58,7 @@ const Explore = () => {
 
         <div class="arrow right"><FontAwesomeIcon icon={faArrowRight} /></div>
       </div>
+        </div>
     </section>
   );
 };
