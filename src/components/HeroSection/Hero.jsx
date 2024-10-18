@@ -34,7 +34,7 @@ const Hero = () => {
           <h2 class="hero-big-title">Turn Aspirations to Reality</h2>
 
           <button class="about-link">
-            <Link href="/about">About us</Link>
+          <Link to="/about">About us</Link>
           </button>
         </div>
 
