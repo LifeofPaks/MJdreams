@@ -6,6 +6,10 @@
   min-height: 140vh;
   overflow-x: hidden;
 
+  @include Large {
+    min-height: 127vh;
+  }
+
   @include Tablet {
     overflow-x: hidden;
     min-height: 155vh;
