@@ -48,9 +48,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="close">
+          {/* <div className="close">
             <img src={close} alt="close-icon" />
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />
