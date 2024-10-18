@@ -17,14 +17,20 @@ const Hero = () => {
           <LogoSmall />
         </div>
         <div class="contact">
-          <button class="primary-btn contact-button">
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              style={{ width: "20px", height: "20px" }}
-            />
-            <p className="chat">Chat</p>
-            <p className="phone"> +971524478011</p>
-          </button>
+          <a
+            href="https://wa.me/971524478011"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="primary-btn contact-button">
+              <FontAwesomeIcon
+                icon={faWhatsapp}
+                style={{ width: "20px", height: "20px" }}
+              />
+              <p className="chat">Chat</p>
+              <p className="phone"> +971524478011</p>
+            </button>
+          </a>
         </div>
       </nav>
 
@@ -34,7 +40,7 @@ const Hero = () => {
           <h2 class="hero-big-title">Turn Aspirations to Reality</h2>
 
           <button class="about-link">
-          <Link to="/about">About us</Link>
+            <Link to="/about">About us</Link>
           </button>
         </div>
 
