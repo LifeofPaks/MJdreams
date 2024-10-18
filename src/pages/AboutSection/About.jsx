@@ -4,15 +4,16 @@ import Footer from "../../components/FooterSection/Footer";
 import close from "../../assets/close.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div>
       <section className="about">
-        <a href="/" className="back-button">
+        <Link href="/" className="back-button">
         <FontAwesomeIcon icon={faLeftLong} className="back-icon"/>
         <p className="back-text">GO BACK</p>
-        </a>
+        </Link>
         <div className="about-container">
           <div className="about-image"></div>
           <div className="about-us">
