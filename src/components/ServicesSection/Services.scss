@@ -7,6 +7,7 @@
 
   @include Tablet {
     overflow-x: hidden;
+    min-height: auto;
   }
 
   .service-title {
@@ -19,11 +20,11 @@
       text-align: center;
       padding-inline: 4rem;
     }
-    
+
     @include Mobile {
-        padding-inline: 1rem;
-        font-size: 32px;
-      }
+      padding-inline: 1rem;
+      font-size: 32px;
+    }
 
     span {
       font-weight: 700;
@@ -41,9 +42,8 @@
     }
 
     @include Mobile {
-        padding-inline: 2rem;
-      }
-
+      padding-inline: 2rem;
+    }
   }
 
   .big-text {
@@ -69,6 +69,15 @@
     top: 30.5rem;
 
     @include Tablet {
+      position: unset;
+
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @include Mobile {
       display: none;
     }
 
@@ -100,17 +109,16 @@
   .image-gallery-small {
     display: none;
 
-    @include Tablet {
+    @include Mobile {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
     }
 
     @include Mobile {
-    
-        img {
-          width: 100%;
-        }
+      img {
+        width: 100%;
       }
+    }
   }
 }

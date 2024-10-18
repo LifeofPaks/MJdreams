@@ -22,16 +22,13 @@
     margin-bottom: 1rem;
     font-family: "Inter", sans-serif;
 
-
-      @include Mobile {
-flex-direction: column;
-      }
-
+    @include Mobile {
+      flex-direction: column;
+    }
 
     .top-review {
       display: flex;
       align-items: center;
-
 
       .review-text {
         font-weight: 600;
@@ -90,6 +87,11 @@ flex-direction: column;
       width: 376px;
       height: 288px;
       font-family: "Inter", sans-serif;
+
+      @include Tablet {
+        width: 100%;
+      }
+  
 
       .t1 {
         margin-top: 1.5rem;
