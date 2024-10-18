@@ -4,6 +4,7 @@ import { Logo1, LogoSmall } from "../SVGs/svgs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
           <h2 class="hero-big-title">Turn Aspirations to Reality</h2>
 
           <button class="about-link">
-            <a href="/about">About us</a>
+            <Link href="/about">About us</Link>
           </button>
         </div>
 
