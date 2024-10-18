@@ -16,6 +16,10 @@
   justify-content: center;
   position: relative;
 
+  @include Mobile {
+    min-height: auto;
+  }
+
   .back-button {
     position: absolute;
     top: 1rem;
@@ -58,6 +62,7 @@
 
     @include Mobile {
       padding: 1.5rem;
+      gap: 1rem;
     }
 
     .about-image {
@@ -78,6 +83,10 @@
       width: 100%;
       color: #2c2c2c;
       font-size: 14px;
+
+      @include Mobile {
+        font-size: 13px;
+      }
 
       .about-text {
         margin-bottom: 1rem;
