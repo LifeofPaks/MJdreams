@@ -17,8 +17,8 @@
 
   @include Mobile {
     overflow-x: hidden;
+    min-height: 90vh;
   }
-
 
   .logo {
     @include Tablet {
@@ -43,19 +43,18 @@
   }
 
   .contact {
-
-    .phone{
-        @include Tablet {
-            display: none;
-          }
+    .phone {
+      @include Tablet {
+        display: none;
+      }
     }
 
-    .chat{
-        display: none;
+    .chat {
+      display: none;
 
-        @include Tablet {
-            display: block;
-          }
+      @include Tablet {
+        display: block;
+      }
     }
   }
 
@@ -65,11 +64,10 @@
     column-gap: 5rem;
 
     @include Tablet {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      }
- 
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
 
     .hero-title {
       color: white;
@@ -83,6 +81,10 @@
         font-size: 20px;
         margin-bottom: 2rem;
         font-weight: 600;
+
+        @include Mobile {
+          margin-bottom: 1rem;
+        }
       }
 
       .hero-big-title {
@@ -90,6 +92,11 @@
         font-weight: 600;
         width: 450px;
         margin-bottom: 2rem;
+
+        @include Mobile {
+          font-size: 40px;
+          padding-inline: 2rem;
+        }
       }
     }
 
@@ -98,10 +105,11 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 15rem;
-      
+
       @include Mobile {
-          margin-top: 5rem;
+        margin-top: 5rem;
       }
+
       .pagination {
         display: flex;
         align-items: center;
@@ -128,8 +136,8 @@
         color: #d9d9d9;
 
         @include Tablet {
-            display: none;
-          }
+          display: none;
+        }
 
         .arrow {
           display: grid;
