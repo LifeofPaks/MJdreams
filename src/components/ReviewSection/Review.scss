@@ -2,6 +2,10 @@
 .review {
   padding-block: 2rem;
 
+  @include Mobile {
+    overflow-x: hidden;
+  }
+
   .top {
     display: flex;
     align-items: center;

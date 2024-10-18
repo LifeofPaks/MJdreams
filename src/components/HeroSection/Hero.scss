@@ -12,8 +12,13 @@
   background-position: center;
 
   @include Tablet {
-    min-height: 70vh;
+    min-height: 80vh;
   }
+
+  @include Mobile {
+    overflow-x: hidden;
+  }
+
 
   .logo {
     @include Tablet {
@@ -93,9 +98,10 @@
       align-items: center;
       justify-content: space-between;
       margin-top: 15rem;
-
-    
-
+      
+      @include Mobile {
+          margin-top: 5rem;
+      }
       .pagination {
         display: flex;
         align-items: center;
