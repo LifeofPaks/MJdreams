@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "./styles/Responsive.scss";
 
 * {
@@ -28,13 +28,14 @@ li {
 a {
   text-decoration: none;
   color: #222222 !important;
+  display: block;
 }
 
 body {
   font-family: "Alexandria", sans-serif;
   overflow-x: hidden;
 
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
 }
@@ -49,31 +50,31 @@ section {
 
 .primary-btn {
   background: #ebeb6c;
-  padding: 0.7rem 1.5rem ;
+  padding: 0.7rem 1.5rem;
   border-radius: 30px;
   font-family: "Inter", sans-serif;
   transition: transform 0.3s ease-in-out;
 
-  &.primary-btn:hover{
+  &.primary-btn:hover {
     transform: scale(1.03);
   }
 }
 
-.text{
+.text {
   color: #757575;
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
 
-.imp-btn{
+.imp-btn {
   padding-inline: 1.8rem;
   font-weight: 600;
 }
 
-.top-btns{
+.top-btns {
   padding: 1rem;
   border-radius: 16px;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 .contact-button {
@@ -83,6 +84,6 @@ section {
   font-weight: 600;
 }
 
-.footer{
+.footer {
   font-family: "Inter", sans-serif;
 }
