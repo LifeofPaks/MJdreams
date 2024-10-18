@@ -50,6 +50,10 @@ section {
   }
 }
 
+.container{
+  max-width: 1440px;
+}
+
 .primary-btn {
   background: #ebeb6c;
   padding: 0.7rem 1.5rem;
@@ -88,4 +92,9 @@ section {
 
 .footer {
   font-family: "Inter", sans-serif;
+}
+
+.set-width{
+margin-inline: auto;
+  max-width: 1440px;
 }

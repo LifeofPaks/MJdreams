@@ -3,11 +3,20 @@
 .services {
   padding-block: 10%;
   position: relative;
-  min-height: 155vh;
+  min-height: 140vh;
+  overflow-x: hidden;
 
   @include Tablet {
     overflow-x: hidden;
-    min-height: auto;
+    min-height: 155vh;
+  }
+
+
+
+  .title-text-container{
+    position: absolute;
+    left: 10%;
+    top: 6rem;
   }
 
   .service-title {
@@ -50,7 +59,8 @@
     position: absolute;
     font-size: 150px;
     color: #ebeb6c;
-    right: -1rem;
+    top: 22rem;
+    right: -20px;
 
     @include Tablet {
       position: unset;

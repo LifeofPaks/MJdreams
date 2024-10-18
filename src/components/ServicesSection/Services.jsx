@@ -12,16 +12,25 @@ import g8 from "../../assets/g8.png";
 
 const Services = () => {
   return (
-    <section className="services">
-      <p class="service-title">
+    <section className="services set-width">
+      <div className="container">
+
+        <div className="title-container">
+
+          <div className="title-text-container">
+          <p class="service-title">
         Every <span>Moment</span> is a Treasured <span>Memory</span>
       </p>
       <p class="text services-text">
         With a passion for creation unforgettable experience, we specialize in a
         comprehensive range of services tailored to meet your every need
       </p>
+          </div>
+      
 
       <h1 class="big-text yellow">SERVICES</h1>
+        </div>
+    
 
       <div class="image-gallery ">
         <div class="g1">
@@ -51,6 +60,7 @@ const Services = () => {
         <img className="m3" src={g3} alt="services-img" />
         <img className="m4" src={g4} alt="services-img" />
         <img className="m5" src={g5} alt="services-img" />
+      </div>
       </div>
     </section>
   );
