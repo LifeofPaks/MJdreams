@@ -13,6 +13,7 @@ import g8 from "../../assets/g8.png";
 const Services = () => {
   return (
     <section className="services set-width">
+      <h1 class="big-text yellow">SERVICES</h1>
       <div className="container">
 
         <div className="title-container">
@@ -28,7 +29,6 @@ const Services = () => {
           </div>
       
 
-      <h1 class="big-text yellow">SERVICES</h1>
         </div>
     
 

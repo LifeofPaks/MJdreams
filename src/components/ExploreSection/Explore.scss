@@ -95,9 +95,20 @@
     }
 
     .last-card {
+     
+      @include Large {
+        display: none;
+      }
+
+      @include Desktop {
+        display: block;
+      }
+
       @include Tablet {
         display: none;
       }
+
+      
     }
 
     .explore-text {
@@ -117,6 +128,18 @@
       color: #ffffff;
       right: -6.5rem;
       top: 35%;
+
+      @include Large {
+        display: none;
+      }
+
+      @include Desktop {
+        display: grid;
+      }
+
+      @include Tablet {
+        display: none;
+      }
     }
   }
 }

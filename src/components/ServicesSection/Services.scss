@@ -4,7 +4,7 @@
   padding-block: 10%;
   position: relative;
   min-height: 140vh;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   @include Large {
     min-height: 127vh;
@@ -12,12 +12,13 @@
 
   @include Desktop {
     min-height: 140vh;
+    overflow-x: hidden;
   }
 
 
   @include Tablet {
     overflow-x: hidden;
-    min-height: 155vh;
+    min-height: 107vh;
   }
 
 
@@ -26,6 +27,12 @@
     position: absolute;
     left: 10%;
     top: 6rem;
+
+    @include Tablet {
+      overflow-x: hidden;
+      left: 0;
+    }
+  
   }
 
   .service-title {
@@ -60,7 +67,8 @@
     }
 
     @include Mobile {
-      padding-inline: 2rem;
+      padding-inline: 2.5rem;
+      font-size: 14px;
     }
   }
 
@@ -68,11 +76,12 @@
     position: absolute;
     font-size: 150px;
     color: #ebeb6c;
-    top: 22rem;
-    right: -20px;
+    right: -2rem;
 
     @include Tablet {
-      position: unset;
+      position: relative;
+      margin-top: 15rem;
+
     }
 
     @include Mobile {
@@ -88,7 +97,8 @@
     top: 30.5rem;
 
     @include Tablet {
-      position: unset;
+      position: relative;
+      margin-top: -29rem;
 
 
       img {
