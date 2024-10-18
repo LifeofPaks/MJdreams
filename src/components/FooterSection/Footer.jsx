@@ -8,17 +8,18 @@ import {
   faWhatsapp,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <section class="footer">
-      <a href="/" className="footer-logo">
+      <Link to="/" className="footer-logo">
         <LogoFooterSmall />
-      </a>
+      </Link>
 
-      <a href="" className="footer-logo-small">
+      <Link to="/" className="footer-logo-small">
         <LogoFooter />
-      </a>
+      </Link>
 
       <div className="footer-info">
         <div className="left">

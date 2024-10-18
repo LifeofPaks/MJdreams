@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
       <section className="about">
-        <Link href="/" className="back-button">
+        <Link to="/" className="back-button">
         <FontAwesomeIcon icon={faLeftLong} className="back-icon"/>
         <p className="back-text">GO BACK</p>
         </Link>
