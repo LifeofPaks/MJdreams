@@ -82,7 +82,7 @@
     @include Tablet {
       position: relative;
       margin-top: 15rem;
-
+      top: 15px;
     }
 
     @include Mobile {
