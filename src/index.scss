@@ -25,10 +25,12 @@ li {
   list-style: none;
 }
 
-a {
+a,
+a:visited,
+a:active,
+a:hover {
   text-decoration: none;
-  color: #222222;
-  display: block;
+  color: #222222 !important;
 }
 
 body {
