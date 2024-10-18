@@ -2,6 +2,7 @@ $Mobile : 475px;
 $Tablet : 780px;
 $Mini : 1024px;
 $Large : 2560px;
+$Desktop : 1440px;
 
 @mixin Mobile {
     @media screen and (max-width : ($Mobile)){
@@ -23,6 +24,12 @@ $Large : 2560px;
 
 @mixin Large {
     @media screen and (max-width : ($Large)){
+        @content
+    }
+}
+
+@mixin Desktop {
+    @media screen and (max-width : ($Desktop)){
         @content
     }
 }

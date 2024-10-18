@@ -10,6 +10,11 @@
     min-height: 127vh;
   }
 
+  @include Desktop {
+    min-height: 140vh;
+  }
+
+
   @include Tablet {
     overflow-x: hidden;
     min-height: 155vh;
