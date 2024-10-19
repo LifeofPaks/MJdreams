@@ -20,6 +20,11 @@
     min-height: 107vh;
   }
 
+  @include Mobile {
+    overflow-x: hidden;
+    min-height: 175vh;
+  }
+
   .title-text-container {
     position: absolute;
     left: 10%;
@@ -131,7 +136,7 @@
         .location {
           bottom: 3rem;
           left: 2rem;
-          font-size: 24px;
+          font-size: 18px;
           opacity: 1;
 
           @include Tablet {
