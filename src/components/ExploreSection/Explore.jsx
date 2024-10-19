@@ -8,6 +8,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Explore = () => {
+  const nextSlide = () => {
+    const slider = document.getElementById('explore')
+    slider.scrollLeft = slider.scrollLeft - 450
+  };
+
+  const prevSlide = () => {
+    const slider = document.getElementById('explore')
+    slider.scrollLeft = slider.scrollLeft + 450
+  };
+
   return (
     <section class="explore">
       <div className="set-width">
@@ -58,10 +68,10 @@ const Explore = () => {
 
             
 
-            <div class="arrow right">
+            <div class="arrow right" onClick={prevSlide}>
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
-            <div class="arrow left">
+            <div class="arrow left" onClick={nextSlide}>
               <FontAwesomeIcon icon={faArrowLeft} />
             </div>
           </div>
