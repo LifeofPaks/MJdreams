@@ -7,7 +7,6 @@
   overflow-x: hidden;
 
   @include Mobile {
-    min-height: 85vh;
     overflow-x: hidden;
   }
 
@@ -41,8 +40,6 @@
     }
   }
 
-
-
   .big-text {
     position: absolute;
     font-size: 150px;
@@ -59,86 +56,137 @@
     }
   }
 
-  .explore-cards-container {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  .explore-here {
     position: relative;
 
-    @include Tablet {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+    .explore-cards-container {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 85vw;
+      overflow-y: hidden;
 
-    .explore-cards {
-      img {
-        margin-bottom: 1rem;
-        transition: transform 0.3s ease-in-out;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @include Tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100vw;
+      }
+
+      @include Mobile {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .explore-cards {
+        height: 450px;
 
         @include Tablet {
-          width: 300px;
+          width: 80%;
+          height: 350px;
         }
-      }
 
-      &.explore-cards:hover {
+        @include Mobile {
+          margin-left: -2em;
+          width: 90%;
+          height: 400px;
+        }
+
         img {
-          transform: scale(1.03);
-        }
-      }
+          margin-bottom: 1rem;
+          transition: transform 0.3s ease-in-out;
 
-      .explore-text{
+          &.desert {
+            width: 398px;
+            height: 317px;
+            border-radius: 16px;
+            object-fit: cover;
+
+            @include Tablet {
+              height: 238px;
+              width: 300px;
+            }
+
+            @include Mobile {
+              height: 304px;
+              width: 382px;
+            }
+            
+          }
+
+          @include Tablet {
+            width: 100%;
+          }
+        }
+
+        &.explore-cards:hover {
+          img {
+            transform: scale(1.03);
+          }
+        }
+
+        .explore-text {
           @include Tablet {
             text-align: left;
           }
-      }
-    }
-
-    .last-card {
-     
-      @include Large {
-        display: none;
+        }
       }
 
-      @include Desktop {
-        display: block;
+      .last-card {
+        @include Large {
+          display: none;
+        }
+
+        @include Desktop {
+          display: block;
+        }
+
+        @include Tablet {
+          display: none;
+        }
       }
 
-      @include Tablet {
-        display: none;
+      .explore-text {
+        width: 300px;
       }
 
-      
-    }
-
-    .explore-text {
-      width: 300px;
-    }
-
-
-    .arrow {
-      display: grid;
-      place-content: center;
-      height: 47px;
-      width: 47px;
-      border: 2px solid #ffffff;
-      border-radius: 50%;
-      cursor: pointer;
-      position: absolute;
-      color: #ffffff;
-      right: -6.5rem;
-      top: 35%;
-
-      @include Large {
-        display: none;
-      }
-
-      @include Desktop {
+      .arrow {
         display: grid;
-      }
+        place-content: center;
+        height: 47px;
+        width: 47px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        color: #ffffff;
+        top: 40%;
+        transform: translateY(-50%);
 
-      @include Tablet {
-        display: none;
+        &.right {
+          right: -7.5rem;
+        }
+
+        &.left {
+          left: -3rem;
+        }
+
+        @include Large {
+          display: none;
+        }
+
+        @include Desktop {
+          display: grid;
+        }
+
+        @include Tablet {
+          display: none;
+        }
       }
     }
   }
