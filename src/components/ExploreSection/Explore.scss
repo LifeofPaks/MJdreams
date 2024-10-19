@@ -67,6 +67,14 @@
       width: 85vw;
       overflow-y: hidden;
 
+      @include Large {
+        width: 55vw;
+      }
+
+      @include Desktop {
+        width: 85vw;
+      }
+
       &::-webkit-scrollbar {
         display: none;
       }
@@ -116,7 +124,6 @@
               height: 304px;
               width: 382px;
             }
-            
           }
 
           @include Tablet {
@@ -170,14 +177,18 @@
 
         &.right {
           right: -7.5rem;
+
+          @include Large {
+            right: -1rem;
+          }
+
+          @include Desktop {
+            right: -7.5rem;
+          }
         }
 
         &.left {
           left: -3rem;
-        }
-
-        @include Large {
-          display: none;
         }
 
         @include Desktop {
