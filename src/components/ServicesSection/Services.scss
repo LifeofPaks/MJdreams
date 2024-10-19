@@ -15,15 +15,12 @@
     overflow-x: hidden;
   }
 
-
   @include Tablet {
     overflow-x: hidden;
     min-height: 107vh;
   }
 
-
-
-  .title-text-container{
+  .title-text-container {
     position: absolute;
     left: 10%;
     top: 6rem;
@@ -32,7 +29,6 @@
       overflow-x: hidden;
       left: 0;
     }
-  
   }
 
   .service-title {
@@ -90,17 +86,68 @@
     }
   }
 
-  .image-gallery {
+  .image-gallery,
+  .image-gallery-small {
     display: flex;
     position: absolute;
     gap: 1rem;
     left: 0;
     top: 30.5rem;
 
+    .img-wrapper,
+    .image-gallery-small {
+      position: relative;
+      overflow: hidden;
+
+      // .overlay {
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   bottom: 0;
+      //   width: 100%;
+      //   background: rgba(0, 0, 0, 0.5);
+      //   z-index: 1;
+      //   overflow: hidden;
+      // }
+
+      .location {
+        position: absolute;
+        bottom: 2rem;
+        left: 1rem;
+        font-size: 16px;
+        opacity: 0;
+        transition: bottom 0.5s ease-in-out, left 0.5s ease-in-out,
+          font-size 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        color: #ebeb6c;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+      }
+
+      img {
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      &:hover {
+        .location {
+          bottom: 3rem;
+          left: 2rem;
+          font-size: 24px;
+          opacity: 1;
+
+          @include Tablet {
+            font-size: 16px;
+          }
+        }
+
+        img {
+          opacity: 0.6;
+        }
+      }
+    }
+
     @include Tablet {
       position: relative;
       margin-top: -29rem;
-
 
       img {
         width: 100%;
@@ -143,6 +190,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+    }
+
+    .img-wrapper {
+      @include Mobile {
+        width: 100%;
+      }
     }
 
     @include Mobile {

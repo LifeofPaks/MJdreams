@@ -15,52 +15,107 @@ const Services = () => {
     <section className="services set-width">
       <h1 class="big-text yellow">SERVICES</h1>
       <div className="container">
-
         <div className="title-container">
-
           <div className="title-text-container">
-          <p class="service-title">
-        Every <span>Moment</span> is a Treasured <span>Memory</span>
-      </p>
-      <p class="text services-text">
-        With a passion for creation unforgettable experience, we specialize in a
-        comprehensive range of services tailored to meet your every need
-      </p>
+            <p class="service-title">
+              Every <span>Moment</span> is a Treasured <span>Memory</span>
+            </p>
+            <p class="text services-text">
+              With a passion for creation unforgettable experience, we
+              specialize in a comprehensive range of services tailored to meet
+              your every need
+            </p>
           </div>
-      
-
         </div>
-    
 
-      <div class="image-gallery ">
-        <div class="g1">
-          <img className="m1" src={g1} alt="services-img" />
-          <img className="m2" src={g2} alt="services-img" />
-        </div>
-        <div class="g2">
-          <div className="g2-1">
-            <img className="m3" src={g3} alt="services-img" />
-            <div className="g2-1-1">
-              <img className="m4" src={g4} alt="services-img" />
-              <img className="m5" src={g5} alt="services-img" />
+        <div class="image-gallery ">
+          <div class="g1">
+            <div className="img-wrapper">
+              <div className="overlay"></div>
+              <h3 className="location">Sahara</h3>
+              <img className="m1" src={g1} alt="services-img" />
+            </div>
+
+            <div className="img-wrapper">
+              <div className="overlay"></div>
+              <h3 className="location">Sahara</h3>
+              <img className="m2" src={g2} alt="services-img" />
             </div>
           </div>
-          <div className="g2-2">
-            <img className="m6" src={g6} alt="services-img" />
+          <div class="g2">
+            <div className="g2-1">
+              <div className="img-wrapper">
+                <div className="overlay"></div>
+                <h3 className="location">Sahara</h3>
+                <img className="m3" src={g3} alt="services-img" />
+              </div>
+              <div className="g2-1-1">
+                <div className="img-wrapper">
+                  <div className="overlay"></div>
+                  <h3 className="location">Sahara</h3>
+                  <img className="m4" src={g4} alt="services-img" />
+                </div>
+
+                <div className="img-wrapper">
+                  <div className="overlay"></div>
+                  <h3 className="location">Sahara</h3>
+                  <img className="m5" src={g5} alt="services-img" />
+                </div>
+              </div>
+            </div>
+            <div className="g2-2">
+              <div className="img-wrapper">
+                <div className="overlay"></div>
+                <h3 className="location">Sahara</h3>
+                <img className="m6" src={g6} alt="services-img" />
+              </div>
+            </div>
+          </div>
+          <div class="g3">
+            <div className="img-wrapper">
+              <div className="overlay"></div>
+              <h3 className="location">Sahara</h3>
+              <img className="m7" src={g7} alt="services-img" />
+            </div>
+
+            <div className="img-wrapper">
+              <div className="overlay"></div>
+              <h3 className="location">Sahara</h3>
+              <img className="m8" src={g8} alt="services-img" />
+            </div>
           </div>
         </div>
-        <div class="g3">
-          <img className="m7" src={g7} alt="services-img" />
-          <img className="m8" src={g8} alt="services-img" />
+        <div className="image-gallery-small">
+          <div className="img-wrapper">
+            <div className="overlay"></div>
+            <h3 className="location">Sahara</h3>
+            <img className="m1" src={g1} alt="services-img" />
+          </div>
+
+          <div className="img-wrapper">
+            <div className="overlay"></div>
+            <h3 className="location">Sahara</h3>
+            <img className="m2" src={g2} alt="services-img" />
+          </div>
+
+          <div className="img-wrapper">
+            <div className="overlay"></div>
+            <h3 className="location">Sahara</h3>
+            <img className="m3" src={g3} alt="services-img" />
+          </div>
+
+          <div className="img-wrapper">
+            <div className="overlay"></div>
+            <h3 className="location">Sahara</h3>
+            <img className="m4" src={g4} alt="services-img" />
+          </div>
+
+          <div className="img-wrapper">
+            <div className="overlay"></div>
+            <h3 className="location">Sahara</h3>
+            <img className="m5" src={g5} alt="services-img" />
+          </div>
         </div>
-      </div>
-      <div className="image-gallery-small">
-        <img className="m1" src={g1} alt="services-img" />
-        <img className="m2" src={g2} alt="services-img" />
-        <img className="m3" src={g3} alt="services-img" />
-        <img className="m4" src={g4} alt="services-img" />
-        <img className="m5" src={g5} alt="services-img" />
-      </div>
       </div>
     </section>
   );
