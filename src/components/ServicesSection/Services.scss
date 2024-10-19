@@ -21,8 +21,7 @@
   }
 
   @include Mobile {
-    overflow-x: hidden;
-    min-height: 175vh;
+    min-height: 247vh;
   }
 
   .title-text-container {
@@ -129,7 +128,7 @@
       }
 
       img {
-        transition: opacity 0.5s ease-in-out;
+        transition: filter 0.5s ease-in-out;
       }
 
       &:hover {
@@ -145,7 +144,7 @@
         }
 
         img {
-          opacity: 0.6;
+          filter: brightness(0.6)
         }
       }
     }
