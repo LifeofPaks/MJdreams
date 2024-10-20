@@ -13,14 +13,14 @@ import g8 from "../../assets/g8.png";
 const Services = () => {
   return (
     <section className="services set-width">
-      <h1 class="big-text yellow">SERVICES</h1>
+      <h1 className="big-text yellow">SERVICES</h1>
       <div className="container">
         <div className="title-container">
           <div className="title-text-container">
-            <p class="service-title">
+            <p className="service-title">
               Every <span>Moment</span> is a Treasured <span>Memory</span>
             </p>
-            <p class="text services-text">
+            <p className="text services-text">
               With a passion for creation unforgettable experience, we
               specialize in a comprehensive range of services tailored to meet
               your every need
@@ -28,8 +28,8 @@ const Services = () => {
           </div>
         </div>
 
-        <div class="image-gallery ">
-          <div class="g1">
+        <div className="image-gallery ">
+          <div className="g1">
             <div className="img-wrapper">
               <div className="overlay"></div>
               <h3 className="location">Worldwide Ticket Reservation
@@ -44,7 +44,7 @@ const Services = () => {
               <img className="m2" src={g2} alt="services-img" />
             </div>
           </div>
-          <div class="g2">
+          <div className="g2">
             <div className="g2-1">
               <div className="img-wrapper">
                 <div className="overlay"></div>
@@ -77,7 +77,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div class="g3">
+          <div className="g3">
             <div className="img-wrapper">
               <div className="overlay"></div>
               <h3 className="location">Airport Transfers 

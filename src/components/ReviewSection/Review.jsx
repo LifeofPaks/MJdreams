@@ -7,9 +7,9 @@ import pfp3 from "../../assets/pfp3.png";
 
 const Review = () => {
   return (
-    <section class="review">
+    <section className="review">
       <div className="set-width for-review">
-        <div class="top">
+        <div className="top">
           <div className="rounded top-btns">Limousine services</div>
           <div className="rounded top-btns">Luxury cruises</div>
           <div className="rounded top-btns">Hotel reservations</div>
@@ -18,8 +18,8 @@ const Review = () => {
             Conference events & conventions
           </div>
         </div>
-        <div class="review-container ">
-          <div class="review-header top-btns">
+        <div className="review-container ">
+          <div className="review-header top-btns">
             <img src={reviewIcon} alt="reviewIcon" className="review-logo" />
 
             <div className="top-review">
@@ -39,7 +39,7 @@ const Review = () => {
               </div>
             </div>
           </div>
-          <div class="review-cards">
+          <div className="review-cards">
             <div className="card">
               <div className="review-star">
                 <p className="review-text">5.0</p>

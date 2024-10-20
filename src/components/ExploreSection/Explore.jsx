@@ -19,59 +19,59 @@ const Explore = () => {
   };
 
   return (
-    <section class="explore">
+    <section className="explore">
       <div className="set-width">
-        <h1 class="big-text yellow">EXPLORE</h1>
-        <p class="explore-title">
+        <h1 className="big-text yellow">EXPLORE</h1>
+        <p className="explore-title">
           <span>Explore</span> the wonders of <span>UAE</span>
         </p>
-        <p class="text explore-text sub-title">
+        <p className="text explore-text sub-title">
           With our curated inbound and outbound tours, featuring iconic
           attractions
         </p>
 
         <div className="explore-here">
-          <div class="explore-cards-container" id="explore">
-            <div class="explore-cards">
+          <div className="explore-cards-container" id="explore">
+            <div className="explore-cards">
               <img src={burj} alt="explore-img" />
-              <p class="text-title">The Burj Khalifa</p>
-              <p class="text explore-text">
+              <p className="text-title">The Burj Khalifa</p>
+              <p className="text explore-text">
                 Serene lakeside retreat with crystal-clear waters and lush green
                 hills.
               </p>
             </div>
 
-            <div class="explore-cards">
+            <div className="explore-cards">
               <img src={sheikh} alt="explore-img" />
-              <p class="text-title">Sheikh Zayed Mosque</p>
-              <p class="text explore-text">
+              <p className="text-title">Sheikh Zayed Mosque</p>
+              <p className="text explore-text">
                 Majestic mountains surrounded by waterfalls.
               </p>
             </div>
 
-            <div class="explore-cards">
+            <div className="explore-cards">
               <img src={dubai} alt="explore-img" />
-              <p class="text-title">Dubai Frame</p>
-              <p class="text explore-text">
+              <p className="text-title">Dubai Frame</p>
+              <p className="text explore-text">
                 Golden sandy beach with turquoise waves and a warm, gentle
                 breeze.
               </p>
             </div>
 
-            <div class="explore-cards">
+            <div className="explore-cards">
               <img src={desert} alt="explore-img" className="desert"/>
-              <p class="text-title">Desert Safari</p>
-              <p class="text explore-text">
+              <p className="text-title">Desert Safari</p>
+              <p className="text explore-text">
               Enchanted and bathed in soft sunlight.
               </p>
             </div>
 
             
 
-            <div class="arrow right" onClick={prevSlide}>
+            <div className="arrow right" onClick={prevSlide}>
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
-            <div class="arrow left" onClick={nextSlide}>
+            <div className="arrow left" onClick={nextSlide}>
               <FontAwesomeIcon icon={faArrowLeft} />
             </div>
           </div>

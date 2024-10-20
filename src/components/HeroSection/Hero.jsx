@@ -8,21 +8,21 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section class="hero">
-      <nav class="nav">
-        <div class="logo">
+    <section className="hero">
+      <nav className="nav">
+        <div className="logo">
           <Logo1 />
         </div>
         <div className="small-logo">
           <LogoSmall />
         </div>
-        <div class="contact">
+        <div className="contact">
           <a
             href="https://wa.me/971524478011"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button class="primary-btn contact-button">
+            <button className="primary-btn contact-button">
               <FontAwesomeIcon
                 icon={faWhatsapp}
                 style={{ width: "20px", height: "20px" }}
@@ -34,29 +34,29 @@ const Hero = () => {
         </div>
       </nav>
 
-      <div class="main-hero">
-        <div class="hero-title">
-          <h5 class="hero-small-title">Creating unforgettable experience</h5>
-          <h2 class="hero-big-title">Turn Aspirations to Reality</h2>
+      <div className="main-hero">
+        <div className="hero-title">
+          <h5 className="hero-small-title">Creating unforgettable experience</h5>
+          <h2 className="hero-big-title">Turn Aspirations to Reality</h2>
 
-          <button class="about-link">
+          <button className="about-link">
             <Link to="/about">About us</Link>
           </button>
         </div>
 
-        <div class="hero-navigation">
-          <div class="pagination">
-            <div class="dot yellow-dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <div className="hero-navigation">
+          <div className="pagination">
+            <div className="dot yellow-dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
           </div>
 
-          <div class="navigate">
-            <div class="arrow left">
+          <div className="navigate">
+            <div className="arrow left">
               <FontAwesomeIcon icon={faArrowLeft} />
             </div>
-            <div class="arrow right">
+            <div className="arrow right">
               <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>

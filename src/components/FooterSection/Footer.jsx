@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section class="footer">
+    <section className="footer">
       <Link to="/" className="footer-logo">
         <LogoFooterSmall />
       </Link>
@@ -47,13 +47,13 @@ const Footer = () => {
           <p className="text-bold">
             Start your dream trip with us <br /> today
           </p>
-          <div class="contact">
+          <div className="contact">
             <a
               href="https://wa.me/971524478011"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button class="primary-btn contact-button">
+              <button className="primary-btn contact-button">
                 <FontAwesomeIcon
                   icon={faWhatsapp}
                   style={{ width: "20px", height: "20px" }}
