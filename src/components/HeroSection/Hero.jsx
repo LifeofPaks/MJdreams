@@ -39,9 +39,17 @@ const Hero = () => {
           <h5 className="hero-small-title">Creating unforgettable experience</h5>
           <h2 className="hero-big-title">Turn Aspirations to Reality</h2>
 
+          <div className="hero-links">
           <button className="about-link">
             <Link to="/about">About us</Link>
           </button>
+
+          <button className="portal-link">
+            <Link to="/portal">Visa portal</Link>
+          </button>
+          </div>
+
+         
         </div>
 
         <div className="hero-navigation">
