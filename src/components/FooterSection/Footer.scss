@@ -29,10 +29,13 @@
     margin-bottom: 5rem;
     margin-top: 1rem;
 
-    @include Mobile {
+    @include Tablet {
       flex-direction: column;
       gap: 2rem;
       margin-top: 1rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
     .left {
@@ -40,6 +43,7 @@
         width: 350px;
         font-weight: 600;
         margin-bottom: 2.5rem;
+        height: 35px;
 
         span {
           font-weight: normal;

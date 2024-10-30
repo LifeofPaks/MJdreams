@@ -43,6 +43,30 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        <div className="ng-address left">
+          <p className="address">
+            {" "}
+            Nigeria Office:
+            <span>
+              {" "}
+              Burnley Roche Travel Services Ltd 11 Aga Layout, Off Elliot
+              Bus-Stop, Agege, Lagos.
+            </span>{" "}
+          </p>
+          <div className="contact">
+            <div className="email">
+              <p>Email</p>
+              <p className="email-address">info@mjtourism.com</p>
+            </div>
+
+            <div className="phone">
+              <p>Phone</p>
+              <p className="phone-number">+2348034508080</p>
+            </div>
+          </div>
+        </div>
+
         <div className="right">
           <p className="text-bold">
             Start your dream trip with us <br /> today
